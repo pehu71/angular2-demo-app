@@ -4,4 +4,4 @@ import {Component} from '@angular/core';
     templateUrl: 'app/tpl/binding.html'
 })
 
-export class BindingComponent {}
+export class Binding {}

@@ -4,4 +4,4 @@ import {Component} from '@angular/core';
     templateUrl: 'app/tpl/simplest.html'
 })
 
-export class SimplestComponent {}
+export class Simplest {}
