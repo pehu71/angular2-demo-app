@@ -1,4 +1,4 @@
-import {NgModule}      from '@angular/core';
+import {NgModule} from '@angular/core';
 import {DemoModule} from "./demo.module";
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent}   from './components/app.component';
