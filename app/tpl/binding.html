@@ -1,6 +1,9 @@
 <h3>Nice data binding model</h3>
 
-<p>Just forget about '&lt;', '=', '@' and '&' binding definitions. Forget about messing up with scopes and controllers. Think
-only of <strong>inputs</strong> and <strong>outputs</strong>.</p>
+<div class="alert alert-info">
+    <p>Just forget about '&lt;', '=', '@' and '&' binding definitions. Forget about messing up with scopes and
+        controllers. Think
+        only of <strong>inputs</strong> and <strong>outputs</strong>.</p>
+</div>
 
-<binding-demo></binding-demo>
+<binding-demo [inputData]="listOfBooks" (onRowClicked)="onChildOutput($event)"></binding-demo>

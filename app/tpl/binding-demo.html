@@ -1,1 +1,9 @@
-Hi!
+<table class="table table-bordered">
+    <tr *ngFor="let book of inputData;" (click)="dataRowClicked(book)" (dblclick)="dataRowDbl(book)">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.description}}</td>
+        <td>{{book.rating}}</td>
+    </tr>
+</table>
