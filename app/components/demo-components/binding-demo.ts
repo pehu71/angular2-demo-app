@@ -6,7 +6,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 })
 
 export class BindingDemo {
-// todo: add doubleclick via Emitter subscription in parent
+
     @Input() inputData: Array<Object>;
 
     @Output('onRowClicked') outputEvent: EventEmitter<Object>;

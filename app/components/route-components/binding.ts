@@ -4,7 +4,17 @@ import {Subscription} from 'rxjs/Rx';
 import {BindingDemo} from "../demo-components/binding-demo";
 
 @Component({
-    templateUrl: 'app/tpl/binding.html'
+    template: `
+        <h3>Nice data binding model</h3>
+        
+        <div class="alert alert-info">
+            <p>Just forget about '&lt;', '=', '@' and '&' binding definitions. Forget about messing up with scopes and
+                controllers. Think
+                only of <strong>inputs</strong> and <strong>outputs</strong>.</p>
+        </div>
+        
+        <binding-demo [inputData]="listOfBooks" (onRowClicked)="onChildOutput($event)"></binding-demo>
+`
 })
 
 export class Binding implements OnInit, OnDestroy {
@@ -27,6 +37,7 @@ export class Binding implements OnInit, OnDestroy {
     }
 
     ngOnDestroy(): void {
-        this.dataSubscription.unsubscribe()
+        this.dataSubscription.unsubscribe();
+        this.dblSubscription.unsubscribe();
     }
 }

@@ -2,17 +2,20 @@
     <h2>Menu</h2>
     <ul>
         <li><a [routerLink]="['/']">Simplicity</a></li>
-        <li><a [routerLink]="['/binding']">Nice data binding model</a></li>
-        <!--todo: binding-->
-        <!--todo: template strings - not A2 but ES6/TS feature-->
-        <!--todo: life-cycle hooks-->
-        <!--todo: easy injectable declaration-->
-        <!--todo: child components integration-->
-        <!--todo: router-->
-        <!--todo: written in TS: template strings, lambda expressions, type checking, classes, interfaces, OOP fashion inheritance-->
+        <li><a [routerLink]="['/binding']">Nice data binding model (binding.ts, binding-demo.ts)</a></li>
+        <li>Written in TS: template strings, lambda expressions, type checking, classes, interfaces, OOP fashion inheritance</li>
+        <li>Life-cycle hooks</li>
+        <li>Easy injectable declaration</li>
+        <li>Child components integration</li>
+        <li>Location strategy made easy</li>
+        <li>Really nice native router</li>
+        <li>Modules via NgModule</li>
+
     </ul>
 </div>
 
 <div class="col col-lg-12">
+
     <router-outlet></router-outlet>
+
 </div>
